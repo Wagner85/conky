@@ -52,11 +52,15 @@ ${offset 15}${color FFFDE2}RAM :$color $mem $memperc% ${color yellow}${membar 4}
 ${offset 15}${color FFFDE2}Swap:$color $swap/$swapmax $swapperc% ${color yellow}${swapbar 4}
 ${offset 15}${color FFFDE2}Bateria: ${battery_percent BAT1}% ${color yellow}${alignr}${battery_bar 4, 130 BAT1}
 ${offset 25}${font DejaVu Sans Mono:size=8}${battery_time BAT1}${font DejaVu Sans Mono:size=8}${color FFFDE2}
+${offset 15}Core 0   ${color ff8300}${cpubar cpu4 6}${color FFFDE2}
 ${offset 15}Core 1   ${color ff8300}${cpubar cpu1 6}${color FFFDE2}
 ${offset 15}Core 2   ${color ff8300}${cpubar cpu2 6}${color FFFDE2}
 ${offset 15}Core 3   ${color ff8300}${cpubar cpu3 6}${color FFFDE2}
 ${offset 15}Core 4   ${color ff8300}${cpubar cpu4 6}${color FFFDE2}
-${offset 15}${font}${color FFFDE2}Procs:$color $processes  ${color FFFDE2}Run:$color $running_processes Temp: ${acpitemp}°C
+${offset 15}Core 5   ${color ff8300}${cpubar cpu4 6}${color FFFDE2}
+${offset 15}Core 6   ${color ff8300}${cpubar cpu4 6}${color FFFDE2}
+${offset 15}Core 7   ${color ff8300}${cpubar cpu4 6}${color FFFDE2}
+${offset 15}${font}${color green}Procs:$color $processes  ${color green}Run:$color $running_processes ${color red} Temp: ${acpitemp}°C
 
 ${font Entopia:bold:size=12}${color green}NETWORK ${hr 2}${font DejaVu Sans Mono:size=9}
 ${offset 15}${color}Ext IP Addr ${color red}${alignr}${exec curl ipinfo.io/ip}
@@ -78,7 +82,7 @@ ${offset 15}${color FF7878}${top name 6} ${alignr}${top pid 6} ${top cpu 6} ${to
 ${font Entopia:bold:size=12}${color F600AA}Disk I/O SSD ${hr 2}
 ${font}Read: ${diskio_read} ${alignr}Write: ${diskio_write}
 ${color3}${diskiograph_read 32,130} ${alignr}${diskiograph_write 32,130}${color}
-${font Entopia:bold:size=12}${color 00ffae}WAGNETUS ${hr 2}$color
+${font Entopia:bold:size=12}${color 00ffae}STONE [CC] ${hr 2}$color
 ${font Terminus:size=8:bold}${color 00ffae}Date & Time ${color}
 ${color grey}${time %e %B %Y   %A    %I:%M %p}
 ]]
