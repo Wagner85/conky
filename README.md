@@ -7,8 +7,6 @@ Uma vez instalado, você deve rodar o Conky pelo terminal:
 $ conky
 Por padrão, o Conky exibe informações em uma janela própria e bem sem graça. Agora você pode pressionar CTRL + C no terminal para parar o Conky.
 
-A NET foi eleita pela Netflix a internet mais rápida do Brasil! Se sua internet está lenta ou se você quer conhecer os planos da NET, acesse o site Internet NET e confira os melhores planos e pacotes em promoção!
-
 Como configurar o Conky manualmente
 Para alterar a aparência da Conky em sua área de trabalho, você pode editar o arquivo de configuração do sistema no local:
 
